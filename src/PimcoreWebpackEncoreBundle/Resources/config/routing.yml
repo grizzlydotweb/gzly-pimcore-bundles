@@ -1,0 +1,3 @@
+gzly_pimcore_webpack_encore_homepage:
+    path:     /
+    defaults: { _controller: GzlyPimcoreWebpackEncoreBundle:Default:index }

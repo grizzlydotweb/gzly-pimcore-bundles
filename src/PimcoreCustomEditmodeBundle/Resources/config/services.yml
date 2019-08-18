@@ -1,0 +1,23 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+  #   grizzly_web_pimcore_custom_editmode.example:
+  #        class: GrizzlyWeb\PimcoreBundles\PimcoreCustomEditmodeBundle\Example
+  #        arguments: ["@service_id", "plain_value", "%parameter%"]
+  app.listener.command_exception:
+    class: GrizzlyWeb\PimcoreBundles\PimcoreCustomEditmodeBundle\EventListener\ConsoleExceptionListener
+    arguments: ['@logger']
+    tags:
+      - { name: kernel.event_listener, event: console.exception }
+  app.listener.command_error:
+    class: GrizzlyWeb\PimcoreBundles\PimcoreCustomEditmodeBundle\EventListener\ErrorLoggerListener
+    arguments: ['@logger']
+    tags:
+      - { name: kernel.event_listener, event: console.terminate }
+  GrizzlyWeb\PimcoreBundles\PimcoreCustomEditmodeBundle\Twig\CustomSettingsExtension:
+    arguments:
+      $tagRenderer: '@Pimcore\Templating\Renderer\TagRenderer'
+      $twigEngine: '@pimcore.templating.engine.twig'
+    tags:
+      - { name: twig.extension  }

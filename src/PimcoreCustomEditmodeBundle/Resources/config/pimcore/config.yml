@@ -1,0 +1,10 @@
+pimcore:
+  objects:
+    class_definitions:
+      layout:
+        map:
+          flexbox: \GrizzlyWeb\PimcoreBundles\PimcoreCustomEditmodeBundle\Model\DataObject\ClassDefinition\Layout\Flexbox
+          flexitem: \GrizzlyWeb\PimcoreBundles\PimcoreCustomEditmodeBundle\Model\DataObject\ClassDefinition\Layout\Flexitem
+      data:
+        map:
+          singlebrick: \GrizzlyWeb\PimcoreBundles\PimcoreCustomEditmodeBundle\Model\DataObject\ClassDefinition\Data\Singlebrick

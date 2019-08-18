@@ -1,0 +1,29 @@
+{
+	"name": "grizzlydotweb/gzly-pimcore-bundles",
+  "type": "library",
+  "description": "Collection of Symfony Bundles for usage in Projects with Pimcore (CMS/PIM/E-Commerce)",
+  "license": "GPL-3.0-or-later",
+  "homepage": "http://grizzlyweb.de/gzly-pimcore-bundles",
+  "authors": [
+    {
+      "name": "grizzly.web Team",
+      "email": "support@grizzlyweb.de",
+      "homepage": "http://grizzlyweb.de/",
+      "role": "Developer"
+    }
+  ],
+	"config": {
+		"optimize-autoloader": true,
+		"sort-packages": true
+	},
+	"require": {
+		"php": ">=7.1",
+		"pimcore/pimcore": "~5.7.0",
+		"symfony/webpack-encore-bundle": "^1.5"
+	},
+	"autoload": {
+		"psr-0" : {
+			"GrizzlyWeb\\PimcoreBundles" : "src"
+		}
+	}
+}

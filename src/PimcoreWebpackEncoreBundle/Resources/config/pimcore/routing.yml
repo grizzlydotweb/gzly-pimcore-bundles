@@ -1,0 +1,5 @@
+gzly_pimcore_webpack_encore:
+    resource: "@GzlyPimcoreWebpackEncoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

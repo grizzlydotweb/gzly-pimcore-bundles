@@ -1,0 +1,12 @@
+{% if editmode %}
+<div class="custom_pimcore_editmode">
+    <div class="custom_pimcore_editmode_settings">
+        {% block settings %}
+            <div class="custom_pimcore_editmode_setting">
+                <span class="custom_pimcore_editmode__block_label">Section Name</span>
+                {{ pimcore_input('title') }}
+            </div>
+        {% endblock %}
+    </div>
+</div>
+{% endif %}

@@ -1,0 +1,3 @@
+#grizzly_web_pimcore_custom_editmode_homepage:
+#    path:     /
+#    defaults: { _controller: PimcoreCustomEditmodeBundle:Default:index }

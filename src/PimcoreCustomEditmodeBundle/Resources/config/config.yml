@@ -1,0 +1,3 @@
+imports:
+  - { resource: pimcore/config.yml }
+  - { resource: services.yml }
